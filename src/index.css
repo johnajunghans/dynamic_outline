@@ -18,14 +18,17 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  /* gap: 15px; */
   padding: 1rem 2rem;
-  margin: 0 auto;
-
+  min-height: calc(100vh - 100px);
 }
 
 #root-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   padding: 1rem 3rem;
+  width: 100%;
 }
 
 .block-container {

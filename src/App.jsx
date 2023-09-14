@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Block from './components/Block'
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
+import NewBlock from './components/NewBlock'
 
 function App() {
 
@@ -58,13 +59,13 @@ function App() {
                 {...provided.droppableProps} 
                 ref={provided.innerRef}>
               {outline.map( (block, index) => (
-                <Block
+                <NewBlock 
                   key={block.id}
                   index={index}
-                  id={block.id} 
-                  preview={`${block.description.slice(0,50)}...`} 
-                  subBlock={block.children}
-                ></Block>
+                  id={block.id}
+                  childElements={block.children}
+                  description={block.description}
+                />
               ))}
               {provided.placeholder}
             </div>
