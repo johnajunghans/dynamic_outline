@@ -4,7 +4,6 @@ export function allowDrop(e) {
 
 export function drag(e) {
     e.dataTransfer.setData("text", e.target.id);
-
 }
 
 export function drop(e) {
