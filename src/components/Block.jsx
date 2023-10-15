@@ -27,7 +27,7 @@ const Block = ({ subBlock, preview, id, index }) => {
                         <Block
                             key={block.id}
                             index={index}
-                            id={block.id} 
+                            id={block.id}
                             subBlock={block.children}
                             preview={`${block.description.slice(0,50)}...`}
                         ></Block>

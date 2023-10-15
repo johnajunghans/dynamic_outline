@@ -4,13 +4,20 @@
   padding: 0;
 }
 
+body {
+  background-color: #FFFFFF;
+}
+
 main {
   font-family: 'Inter';
 }
 
 header {
-  height: 100px;
-  background-color: #d9d9d9;
+  height: 75px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  /* padding: 0 1rem; */
 }
 
 section {
@@ -19,16 +26,18 @@ section {
   align-items: center;
   justify-content: flex-start;
   padding: 1rem 2rem;
-  min-height: calc(100vh - 100px);
+  
 }
 
 #root-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
-  padding: 1rem 3rem;
-  width: 100%;
+  padding: 3rem 3rem 1rem;
+  width: 75%;
+  min-height: calc(100vh - 200px);
+  border-radius: 10px;
+  transition: 0.2s;
 }
 
 .block-container {
